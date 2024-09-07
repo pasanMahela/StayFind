@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAF5FF"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:text="STAY FIND"
+        android:textColor="#507135"
+        android:textSize="28sp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/iconImage"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:contentDescription="Illustration"
+        android:src="@drawable/onboard1"/>
+
+    <TextView
+        android:id="@+id/subtitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="Find Boarding Places"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/descriptionText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:gravity="center"
+        android:text="Find your ideal room or annex with ease. Browse available options and get detailed info to make your choice simple and quick."
+        android:textColor="#8E8E8E"
+        android:textSize="18sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:id="@+id/dotIndicatorLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp">
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="28dp"
+            android:layout_height="10dp"
+            android:background="@drawable/dot1"
+            android:layout_marginEnd="5dp"/>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/dot3"
+            android:layout_marginEnd="5dp"/>
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/dot3"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/skipButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:text="Skip"
+            android:textColor="#A4A4A4"
+            android:textSize="18sp"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageButton
+            android:id="@+id/nextButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/nextarrow"
+            android:contentDescription="To next screen"/>
+    </LinearLayout>
+</LinearLayout>
